@@ -55,8 +55,11 @@ header h1 a, abbr{
 	color: #1FFDEC;
 }
 .topbar{
-	margin-right: auto;
-	margin-left: 50px;
+	/* margin-right: auto; */
+	margin-left: 70px;
+}
+#logo2{
+	margin-top: 25px;
 }
 header h1{
 	font-family: 'Orbitron', sans-serif;
