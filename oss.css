@@ -23,13 +23,13 @@ body{
       z-index: -1000; /* Video is placed behind all other elements */
     }
 section{
-	/*border: 1px solid black;*/
-	/*background: linear-gradient(150deg,rgba(0, 255, 0, 0.30),rgba(0, 0, 255, 0.50));
+	/* border: 1px solid black; */
+	background: linear-gradient(150deg,rgba(0, 255, 0, 0.342),rgba(0, 0, 255, 0.533));
 	height:920px;
 	padding: 10px;
 	margin: -18.3px;
 	position: relative;
-	overflow: auto;*/
+	overflow: auto;
 	
 }
 
