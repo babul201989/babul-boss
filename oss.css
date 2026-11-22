@@ -317,5 +317,422 @@ button:hover{
 				font-size: 12px;
 			}
 		}
+/* =========================================
+   BOSS RESPONSIVE LAYOUT
+   Add this at the bottom of oss.css
+========================================= */
 
+/* Global responsive reset */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Background video */
+#video-background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Main content */
+.flip-scale-up-hor {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: visible;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+header h1 {
+    max-width: 100%;
+    margin: 10px;
+    overflow-wrap: anywhere;
+}
+
+header h1 a {
+    text-decoration: none;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#logo,
+#logo2 {
+    max-width: 100%;
+}
+
+/* Top Grubbrr logo */
+.rotate-vert-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.rotate-vert-center img {
+    max-width: 100%;
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Tool icon rows */
+.div1 {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.div1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.div1 li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic2 {
+    width: 100px;
+    height: 100px;
+    max-width: 100%;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+.pic2:hover {
+    transform: scale(1.08);
+}
+
+/* Quick access buttons */
+.tool {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.tool h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.tool a {
+    text-decoration: none;
+}
+
+.tool button {
+    padding: 12px 22px;
+    min-height: 45px;
+    max-width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+/* Floating shortcuts - keep them in normal layout */
+.expert,
+.gmail,
+.calendar,
+.help1,
+.help2 {
+    position: static !important;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.expert img,
+.gmail img,
+.calendar img,
+.help1 img,
+.help2 img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Shortcut container behaviour */
+.flip-scale-up-hor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Video section */
+.video {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.foot {
+    width: 100%;
+    padding: 15px;
+}
+
+.footpara p {
+    margin: 0;
+    padding: 10px;
+}
+
+/* =========================================
+   TABLET - 1024px and below
+========================================= */
+
+@media screen and (max-width: 1024px) {
+
+    .flip-scale-up-hor {
+        padding: 15px;
+    }
+
+    header {
+        gap: 15px;
+    }
+
+    .pic2 {
+        width: 85px;
+        height: 85px;
+    }
+
+    .div1 ul {
+        gap: 18px;
+    }
+
+    .video {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* =========================================
+   MOBILE - 768px and below
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .flip-scale-up-hor {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: clamp(20px, 5vw, 30px);
+    }
+
+    header h1 span {
+        display: block;
+        font-size: 15px !important;
+        margin-top: 5px;
+    }
+
+    #logo,
+    #logo2 {
+        width: 70px;
+        height: 70px;
+    }
+
+    .rotate-vert-center img {
+        width: 200px;
+    }
+
+    .div1 {
+        margin: 15px auto;
+    }
+
+    .div1 ul {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .pic2 {
+        width: 75px;
+        height: 75px;
+    }
+
+    .tool {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        width: 100%;
+    }
+
+    .tool h2 {
+        width: 100%;
+    }
+
+    .tool h2 a {
+        display: block;
+        width: 100%;
+    }
+
+    .tool button {
+        width: 100%;
+        padding: 12px 8px;
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+    .video {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .expert,
+    .gmail,
+    .calendar,
+    .help1,
+    .help2 {
+        margin: 8px;
+    }
+
+}
+
+/* =========================================
+   SMALL MOBILE - 480px and below
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .flip-scale-up-hor {
+        padding: 8px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header h1 span {
+        font-size: 13px !important;
+    }
+
+    .div1 ul {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 12px 8px;
+    }
+
+    .pic2 {
+        width: 65px;
+        height: 65px;
+    }
+
+    .tool {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .tool button {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .video iframe {
+        width: 100%;
+    }
+
+    .rotate-vert-center img {
+        width: 170px;
+    }
+
+    .footpara p {
+        font-size: 12px;
+    }
+
+}
+
+/* =========================================
+   LARGE SCREEN / TV
+========================================= */
+
+@media screen and (min-width: 1600px) {
+
+    .flip-scale-up-hor {
+        max-width: 1800px;
+    }
+
+    .pic2 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .div1 ul {
+        gap: 30px;
+    }
+
+}
 
