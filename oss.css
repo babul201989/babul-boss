@@ -1,732 +1,318 @@
-
-/* =========================================
-   BOSS - BABUL'S ONE STOP SOLUTION
-   Responsive CSS for Desktop, Tablet and Mobile
-========================================= */
-
-* {
-    box-sizing: border-box;
-}
-
-html {
+html{
     scroll-behavior: smooth;
-    width: 100%;
+    }
+	
+body{
+	position: relative;
+	padding: 10px;
+	padding-left: 10px;	
+	overflow: auto;
+	
 }
-
-body {
-    position: relative;
-    margin: 0;
-    padding: 10px;
-    min-height: 100vh;
-    width: 100%;
-    overflow-x: hidden;
-    font-family: Arial, sans-serif;
-}
-
-/* =========================================
-   BACKGROUND VIDEO
-========================================= */
 
 #video-background {
-    position: fixed;
-    inset: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1000;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; /* Set the minimum width and height to cover the entire viewport */
+      min-height: 90%;
+      width: 100%; /* Make the video cover the full width */
+	  height: 100%; /* Make the video cover the full height */
+      object-fit: cover;
+      z-index: -1000; /* Video is placed behind all other elements */
+    }
+section{
+	/* border: 1px solid black; */
+	background: linear-gradient(150deg,rgba(0, 255, 0, 0.342),rgba(0, 0, 255, 0.533));
+	height:920px;
+	padding: 10px;
+	margin: -18.3px;
+	position: relative;
+	overflow: auto;
+	
 }
 
-/* =========================================
-   MAIN SECTION
-========================================= */
-
-section {
-    background: linear-gradient(
-        150deg,
-        rgba(0, 255, 0, 0.342),
-        rgba(0, 0, 255, 0.533)
-    );
-
-    min-height: calc(100vh - 20px);
-    height: auto;
-    padding: 20px;
-    margin: 0;
-    position: relative;
-    overflow: visible;
-    border-radius: 10px;
+.div1 ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px;
+	margin: 10px;
 }
 
-/* =========================================
-   HEADER
-========================================= */
+.div ul li a{
+	text-decoration: none;
+	color: white;
+}	
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    padding: 10px 20px;
+header{
+	display: flex;	
+	
+}
+header h1 a, abbr{
+	text-decoration: none;
+	font-size: 70px;
+	color: #1FFDEC;
+}
+.topbar{
+	/* margin-right: auto; */
+	margin-left: 70px;
+}
+#logo2{
+	margin-top: 25px;
+}
+header h1{
+	font-family: 'Orbitron', sans-serif;
+	font-family: 'Black Ops One', cursive;
+	width: 50%;	
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+#logo{
+	width:500px;
+	height:120px;
+	margin-right: 0px;	
+}
+.pic2{
+	height: 60px;
+	width: 60px;	
+}
+#von{
+	height: 80px;
+	width: 80px;	
+}
+.tool{
+	/*border: 1px solid black;*/
+	width: 90%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
 }
 
-header h1 {
-    font-family: 'Black Ops One', cursive;
-    width: auto;
-    flex: 1 1 500px;
-    margin: 0;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+.tool h2{
+	margin: 10px;
+}
+.tool h2 a{
+	text-decoration: none;
+	color: black;		
 }
 
-header h1 a,
-header h1 abbr {
-    text-decoration: none;
-    color: #1FFDEC;
-    font-size: clamp(35px, 5vw, 70px);
+.expert{
+	position: absolute;
+	right: 160px;
+	top: 380px;
+	transition: transform 0.2s; 
+}
+.expert:hover{
+	transform: scale(1.5); 
+	box-shadow: 2px 2px 80px 4px purple; 
+	
 }
 
-header h1 span {
-    color: white;
-    font-size: clamp(14px, 2vw, 25px) !important;
+.gmail{
+	position: absolute;
+	right: 250px;
+	top: 160px;
+	transition: transform 0.2s; 
+}
+.gmail:hover{
+	transform: scale(1.2); 
+	box-shadow: 2px 2px 10px 4px purple;
 }
 
-.topbar {
-    margin-left: 0;
+.calendar{
+	position: absolute;
+	right: 130px;
+	top: 160px;
+	transition: transform 0.2s; 
+}
+.calendar:hover{
+	transform: scale(1.2); 
+	box-shadow: 2px 2px 10px 4px purple;
+	
 }
 
-#logo2 {
-    width: 80px;
-    height: 80px;
-    margin-top: 0;
-    object-fit: contain;
+.help1{
+	position: absolute;
+	right: 230px;
+	top: 260px;
+	transition: transform 0.2s; 
 }
 
-#logo {
-    width: 350px;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    margin-right: 0;
+.help2{
+	position: absolute;
+	right: 120px;
+	top: 260px;
+	transition: transform 0.2s; 
 }
 
-/* =========================================
-   TOOL ICON ROWS
-========================================= */
-
-.div1 {
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
+.help1:hover{
+	transform: scale(1.2); 
+	box-shadow: 2px 2px 80px 4px purple; 
+	
+}
+.help2:hover{
+	transform: scale(1.2); 
+	box-shadow: 2px 2px 80px 4px purple; 
+	
 }
 
-.div1 ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    gap: 25px;
+footer{
+	/*border: 1px solid black;*/
+	width: 300px;
+	margin: auto;
+}
+.foot{
+	/*border: 1px solid black;*/
+	position: absolute;
+	bottom: 15px;
+	
+}
+.footpara{
+	/*border: 1px solid black;*/
+	color: white;
+	text-align: center;
+}
+.foot p{	
+	font-weight: bold;		
 }
 
-.div1 ul li {
-    list-style-type: none;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    margin: 5px;
+button{
+	background-color: lightblue;
+	border-radius: 50px;
+	padding: 20px 30px;
+	margin-left: ;
+	transition: transform 0.2s;
 }
-
-.div1 ul li a {
-    text-decoration: none;
-    color: white;
+button b{
+	font-family: 'Orbitron', sans-serif;
 }
-
-.pic2 {
-    width: 75px;
-    height: 75px;
-    object-fit: contain;
-    transition: transform 0.2s ease;
+button:hover{
+	background-color: lightgreen;
+	color: red;
+	transform: scale(1.1); 
+	box-shadow: 2px 2px 10px 4px purple;
 }
-
+.pic2{
+    transition: transform 0.2s; 
+}
 .pic2:hover {
-    transform: scale(1.3);
-    box-shadow: 2px 2px 50px 4px blue;
+    transform: scale(1.5); 
+	box-shadow: 2px 2px 100px 4px blue;
 }
 
-#von {
-    height: 80px;
-    width: 80px;
+.video{
+	/*border: 1px solid black;*/
+	width: 60%;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
 }
 
-/* =========================================
-   TOOL BUTTONS
-========================================= */
-
-.tool {
-    width: 100%;
-    margin: 30px auto;
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    gap: 15px;
+.video iframe{
+	margin: 20px;
 }
-
-.tool h2 {
-    margin: 5px;
-    font-size: 16px;
-}
-
-.tool h2 a {
-    text-decoration: none;
-    color: black;
-}
-
-button {
-    background-color: lightblue;
-    border-radius: 50px;
-    padding: 18px 25px;
-    margin: 0;
-
-    border: none;
-    cursor: pointer;
-
-    transition: transform 0.2s ease,
-                background-color 0.2s ease,
-                box-shadow 0.2s ease;
-}
-
-button b {
-    font-family: 'Orbitron', sans-serif;
-}
-
-button:hover {
-    background-color: lightgreen;
-    color: red;
-    transform: scale(1.08);
-    box-shadow: 2px 2px 10px 4px purple;
-}
-
-/* =========================================
-   FLOATING SHORTCUTS - DESKTOP
-========================================= */
-
-.expert,
-.gmail,
-.calendar,
-.help1,
-.help2 {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.2s ease;
-}
-
-.expert {
-    right: 160px;
-    top: 380px;
-}
-
-.gmail {
-    right: 250px;
-    top: 160px;
-}
-
-.calendar {
-    right: 130px;
-    top: 160px;
-}
-
-.help1 {
-    right: 230px;
-    top: 260px;
-}
-
-.help2 {
-    right: 120px;
-    top: 260px;
-}
-
-.expert:hover,
-.help1:hover,
-.help2:hover {
-    transform: scale(1.2);
-    box-shadow: 2px 2px 50px 4px purple;
-}
-
-.gmail:hover,
-.calendar:hover {
-    transform: scale(1.2);
-    box-shadow: 2px 2px 10px 4px purple;
-}
-
-.expert img,
-.gmail img,
-.calendar img,
-.help1 img,
-.help2 img {
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
-/* =========================================
-   YOUTUBE VIDEOS
-========================================= */
-
-.video {
-    width: 100%;
-    margin: 40px auto 20px;
-
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
-
-    align-items: center;
-}
-
-.video iframe {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    height: auto;
-
-    margin: 0;
-    border: none;
-    border-radius: 10px;
-}
-
-/* =========================================
-   FOOTER
-========================================= */
-
-footer {
-    width: 100%;
-    margin: 30px auto 0;
-    text-align: center;
-}
-
-.foot {
-    width: 100%;
-    position: relative;
-    bottom: auto;
-    padding: 10px;
-}
-
-.footpara {
-    color: white;
-    text-align: center;
-}
-
-.foot p {
-    font-weight: bold;
-    margin: 0;
-}
-
-/* =========================================
-   ANIMATED GRUBBRR LOGO
-========================================= */
 
 .rotate-vert-center {
-    -webkit-animation: rotate-vert-center 3s
-        cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
-
-    animation: rotate-vert-center 3s
-        cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
-
-    width: 200px;
-    height: auto;
-
-    position: fixed;
-    z-index: 1000;
-
-    right: 30px;
-    bottom: 20px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.rotate-vert-center img {
-    width: 250px;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
+	-webkit-animation: rotate-vert-center 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+	        animation: rotate-vert-center 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+			/*border: 5px solid black;*/
+			width: 200px;
+			height: 80px;
+			position: fixed;
+			z-index: 1000;
+			right: 100px;
+			bottom: 30px;
 }
 
 @keyframes rotate-vert-center {
-    0% {
-        transform: rotateY(0);
-    }
-
-    100% {
-        transform: rotateY(360deg);
-    }
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
 }
-
-/* =========================================
-   MAIN PAGE ANIMATION
-========================================= */
 
 .flip-scale-up-hor {
-    -webkit-animation: flip-scale-up-hor 0.8s linear both;
-    animation: flip-scale-up-hor 0.8s linear both;
+	-webkit-animation: flip-scale-up-hor 0.8s linear both;
+	        animation: flip-scale-up-hor 0.8s linear both;
 }
 
-@keyframes flip-scale-up-hor {
-    0% {
-        transform: scale(0.5);
-    }
-
-    100% {
-        transform: scale(1);
-    }
+@keyframes flip-scale-up-hor{
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 }
 
-/* =========================================
-   TABLET - 1024px
-========================================= */
-
-@media screen and (max-width: 1024px) {
-
-    section {
-        padding: 15px;
-    }
-
-    header {
-        justify-content: center;
-        text-align: center;
-    }
-
-    header h1 {
-        flex-basis: 100%;
-    }
-
-    #logo {
-        width: 300px;
-    }
-
-    .div1 ul {
-        gap: 15px;
-    }
-
-    .pic2 {
-        width: 70px;
-        height: 70px;
-    }
-
-    .video {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .expert,
-    .gmail,
-    .calendar,
-    .help1,
-    .help2 {
-        position: static;
-        display: inline-flex;
-        margin: 10px;
-    }
-
-    .rotate-vert-center {
-        right: 15px;
-        bottom: 15px;
-        width: 150px;
-    }
-
-    .rotate-vert-center img {
-        width: 180px;
-    }
-
-}
-
-/* =========================================
-   MOBILE - 768px
-========================================= */
+/*RESPONSIVENESS*/
 
 @media screen and (max-width: 768px) {
+			header {
+				flex-direction: column;
+				align-items: center;
+			}
 
-    body {
-        padding: 5px;
-    }
+			#logo {
+				width: 300px;
+				height: auto;
+				margin-top: 20px;
+			}
 
-    section {
-        padding: 12px;
-        min-height: 100vh;
-        margin: 0;
-    }
+			.div1 ul li {
+				display: block;
+				text-align: center;
+			}
 
-    header {
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        padding: 10px 5px;
-    }
+			.tool {
+				flex-direction: column;
+				align-items: center;
+			}
 
-    header h1 {
-        width: 100%;
-        flex: none;
-        text-align: center;
-    }
+			.expert,
+			.gmail,
+			.calendar,
+			.help1,
+			.help2 {
+				position: static;
+				margin: 10px auto;
+			}
 
-    header h1 a,
-    header h1 abbr {
-        font-size: clamp(28px, 7vw, 42px);
-    }
+			.video {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
 
-    header h1 span {
-        display: block;
-        font-size: 14px !important;
-        margin-top: 5px;
-    }
+		@media screen and (max-width: 480px) {
+			header h1 {
+				font-size: 40px;
+			}
 
-    #logo {
-        width: 250px;
-        height: auto;
-    }
+			.div1 ul li {
+				padding: 10px;
+			}
 
-    #logo2 {
-        width: 65px;
-        height: 65px;
-    }
+			.tool h2 {
+				margin: 10px 0;
+			}
 
-    .div1 {
-        margin: 15px auto;
-    }
+			button {
+				padding: 15px 25px;
+			}
 
-    .div1 ul {
-        display: grid;
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        justify-items: center;
-        align-items: center;
-        gap: 10px;
-    }
+			.video iframe {
+				width: 90%;
+				height: 200px;
+			}
 
-    .div1 ul li {
-        padding: 5px;
-        margin: 3px;
-        width: 100%;
-    }
-
-    .pic2 {
-        width: 70px;
-        height: 70px;
-    }
-
-    /* Buttons */
-
-    .tool {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        width: 100%;
-        gap: 12px;
-    }
-
-    .tool h2 {
-        margin: 0;
-        width: 100%;
-    }
-
-    .tool h2 a {
-        display: block;
-        width: 100%;
-    }
-
-    .tool button {
-        width: 100%;
-        min-height: 50px;
-        padding: 12px 8px;
-        font-size: 14px;
-        border-radius: 15px;
-    }
-
-    /* Shortcuts */
-
-    .expert,
-    .gmail,
-    .calendar,
-    .help1,
-    .help2 {
-        position: static;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        margin: 8px;
-    }
-
-    .expert img {
-        width: 75px;
-        height: 75px;
-    }
-
-    .gmail img,
-    .calendar img,
-    .help2 img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .help1 img {
-        width: 75px;
-        height: 75px;
-    }
-
-    /* Videos */
-
-    .video {
-        grid-template-columns: 1fr;
-        width: 100%;
-        gap: 15px;
-        margin: 25px auto;
-    }
-
-    .video iframe {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 16 / 9;
-    }
-
-    /* Animated logo */
-
-    .rotate-vert-center {
-        position: relative;
-        width: 150px;
-        margin: 20px auto;
-        right: auto;
-        bottom: auto;
-    }
-
-    .rotate-vert-center img {
-        width: 180px;
-    }
-
-    footer {
-        margin-top: 20px;
-    }
-
-}
-
-/* =========================================
-   SMALL MOBILE - 480px
-========================================= */
-
-@media screen and (max-width: 480px) {
-
-    body {
-        padding: 3px;
-    }
-
-    section {
-        padding: 10px;
-    }
-
-    header h1 a,
-    header h1 abbr {
-        font-size: 30px;
-    }
-
-    header h1 span {
-        font-size: 12px !important;
-    }
-
-    #logo {
-        width: 200px;
-    }
-
-    .div1 ul {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 8px;
-    }
-
-    .pic2 {
-        width: 60px;
-        height: 60px;
-    }
-
-    .div1 ul li {
-        padding: 3px;
-        margin: 2px;
-    }
-
-    .tool {
-        grid-template-columns: 1fr;
-        gap: 10px;
-    }
-
-    .tool button {
-        padding: 14px 10px;
-        font-size: 14px;
-    }
-
-    .video iframe {
-        width: 100%;
-    }
-
-    .rotate-vert-center {
-        width: 130px;
-        margin: 15px auto;
-    }
-
-    .rotate-vert-center img {
-        width: 160px;
-    }
-
-    .footpara {
-        font-size: 12px;
-    }
-
-}
-
-/* =========================================
-   LARGE DISPLAY - 1600px+
-========================================= */
-
-@media screen and (min-width: 1600px) {
-
-    section {
-        max-width: 2000px;
-        margin: auto;
-    }
-
-    .div1 ul {
-        gap: 30px;
-    }
-
-    .pic2 {
-        width: 90px;
-        height: 90px;
-    }
-
-    .video {
-        max-width: 1600px;
-    }
-
-}
-
-/* =========================================
-   ACCESSIBILITY - REDUCED MOTION
-========================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-
-}
+			.footpara {
+				font-size: 12px;
+			}
+		}
