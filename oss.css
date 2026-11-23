@@ -316,3 +316,80 @@ button:hover{
 				font-size: 12px;
 			}
 		}
+/* ===== BOSS: SAFE MOBILE HEADER & ICON FIX ===== */
+
+@media screen and (max-width: 768px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header h1 {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    header h1 a,
+    header h1 abbr {
+        font-size: 40px;
+    }
+
+    #logo {
+        width: 250px;
+        max-width: 90%;
+        height: auto;
+    }
+
+    #logo2 {
+        margin-top: 10px;
+    }
+
+    /* Tool icons */
+    .div1 ul {
+        padding: 0;
+        text-align: center;
+    }
+
+    .div1 ul li {
+        display: inline-block;
+        margin: 8px;
+        padding: 8px;
+    }
+
+    .pic2 {
+        width: 65px;
+        height: 65px;
+    }
+
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+
+    header h1 a,
+    header h1 abbr {
+        font-size: 30px;
+    }
+
+    header h1 span {
+        font-size: 13px !important;
+    }
+
+    #logo {
+        width: 200px;
+    }
+
+    .div1 ul li {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .pic2 {
+        width: 55px;
+        height: 55px;
+    }
+
+}
