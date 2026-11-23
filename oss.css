@@ -393,3 +393,26 @@ button:hover{
     }
 
 }
+/* ===== FIX BOSS TITLE ON MOBILE ===== */
+
+@media screen and (max-width: 768px) {
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    header h1 a,
+    header h1 abbr {
+        font-size: 32px;
+        white-space: nowrap;
+    }
+
+    header h1 span {
+        display: block;
+        white-space: normal;
+        font-size: 13px !important;
+    }
+
+}
